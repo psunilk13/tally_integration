@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2026-10-07 00:00:00.000000",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tally_url",
+  "tally_port",
+  "tally_company",
+  "enabled",
+  "section_break",
+  "customer_ledger_parent",
+  "supplier_ledger_parent",
+  "section_break_2",
+  "test_connection"
+ ],
+ "fields": [
+  {
+   "fieldname": "tally_url",
+   "fieldtype": "Data",
+   "label": "Tally URL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tally_port",
+   "fieldtype": "Int",
+   "label": "Tally Port",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tally_company",
+   "fieldtype": "Data",
+   "label": "Tally Company Name",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "section_break",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Sundry Debtors",
+   "fieldname": "customer_ledger_parent",
+   "fieldtype": "Data",
+   "label": "Customer Ledger Parent"
+  },
+  {
+   "default": "Sundry Creditors",
+   "fieldname": "supplier_ledger_parent",
+   "fieldtype": "Data",
+   "label": "Supplier Ledger Parent"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "test_connection",
+   "fieldtype": "Button",
+   "label": "Test Connection"
+  }
+ ],
+ "hide_toolbar": 0,
+ "index_web_pages_for_search": 1,
+ "is_single": 1,
+ "links": [],
+ "modified": "2026-10-07 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Tally Integration",
+ "name": "Tally Configuration",
+ "naming_rule": "",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

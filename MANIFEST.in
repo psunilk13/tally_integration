@@ -1,0 +1,2 @@
+include *.txt
+recursive-include tally_integration *.py *.json *.js *.css *.html *.md
